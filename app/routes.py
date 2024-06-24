@@ -3,4 +3,5 @@ from flask import render_template
 
 @app.route("/")
 def home():
-    return render_template('index.html')
+    user = {"username": "David"}
+    return render_template('index.html', title="Informus", user=user)
